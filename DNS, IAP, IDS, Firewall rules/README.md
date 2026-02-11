@@ -80,7 +80,9 @@
   1. The mail would be sent without a tracking number.
   2. The mail would be delayed or "dropped" because the mailroom can't track it. 🛑
   3. The mailroom would just reuse an old tracking number that is currently in use.
-> Answer :If the mailroom (Cloud NAT) runs out of Public Ports, it simply can't create a new tracking entry in its logbook. Without that tracking number, it has no way to route the reply back to the correct room, so the connection fails. In the networking world, we call this Port Exhaustion.
+> Answer :If the mailroom (Cloud NAT) runs out of Public Ports, it simply can't create a new tracking entry in its logbook.
+> Without that tracking number, it has no way to route the reply back to the correct room, so the connection fails.
+> In the networking world, we call this **Port Exhaustion**.
 
 ### The Return Journey: Who gets the mail? 📬
 - When tools.com sends a reply back, the packet arrives at the building's front door.
