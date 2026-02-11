@@ -42,13 +42,13 @@
 
 ### Step 2: The Mailroom Logbook (Cloud NAT) 📤
 - The letter arrives at the Mailroom (Cloud NAT). Since 10.0.0.5 is a secret address that the outside world doesn't understand, the Mailroom clerk does two things:
-   - Address Swap: He crosses out 10.0.0.5 and writes the building’s Public IP (e.g., 203.0.113.10).
-      - Tracking Number (Public Port): He assigns a unique Public Port (e.g., Port 12345) to this specific conversation and records it in his logbook.
+   - **Address Swap:** He crosses out 10.0.0.5 and writes the building’s Public IP (e.g., 203.0.113.10).
+   - **Tracking Number (Public Port):** He assigns a unique Public Port (e.g., Port 12345) to this specific conversation and records it in his logbook.
 
 ### Step 3: The Specialized Detectives (Cloud Armor & Web Risk API) 🕵️‍♂️
 - Before the letter even leaves the building, the Mailroom clerk consults two high-level experts:
-    - Web Risk API: This is a detective with a massive database of "known criminals." He checks the destination address. If tools.com actually looks like a site that steals passwords, he'll shout "Stop!" 🛑
-    - Cloud Armor: This detective looks at the volume and type of mail. If Secret Room A suddenly tries to send 1,000,000 letters a second (a "DDoS" attack), Cloud Armor shuts it down.
+    - **Web Risk API:** This is a detective with a massive database of "known criminals." He checks the destination address. If tools.com actually looks like a site that steals passwords, he'll shout "Stop!" 🛑
+    - **Cloud Armor:** This detective looks at the volume and type of mail. If Secret Room A suddenly tries to send 1,000,000 letters a second (a "DDoS" attack), Cloud Armor shuts it down.
 
 ### Step 4: The Journey Back 📥
 - The website receives the letter and sends a reply back to the Public IP (203.0.113.10) at the Public Port (Port 12345).
