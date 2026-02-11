@@ -1,4 +1,5 @@
-### one big "Game Day" story. This scenario follows a single piece of data as it moves through the building, showing how DNS, Cloud NAT, Firewall Rules, IAP, and Cloud IDS work as a unit.
+## one big "Game Day" story. This scenario follows a single piece of data as it moves through the building, showing how DNS, Cloud NAT, Firewall Rules, IAP, and Cloud IDS work as a unit.
+
 
 **The Scenario:** The Coach’s Secret Playbook Update 📋
 > Imagine a Coach (Administrator) is at home and needs to send a new "Secret Playbook" (a data update) to Secret Room A (your internal server).
@@ -19,9 +20,7 @@
 - Next, the request hits the Banned List (Firewall Rules). The rules say: "Secret Room A is allowed to talk to tools.com, but it is not allowed to talk to fishy-site.com."
 - Outcome: Since tools.com is on the "Approved" list, the message is allowed to proceed to the mailroom.
 
-Phase 4: The Delivery (Cloud NAT) 📤
-Finally, the message reaches the Mailroom (Cloud NAT).
-
-The clerk sees the message is from the "Secret" room. He swaps the secret room number for the Building’s Public Address and attaches a unique Tracking Number (Port).
-
-Outcome: The message goes out to the internet. When the tool's data comes back with that same tracking number, the Mailroom knows exactly which secret room to deliver it to.
+### Phase 4: The Delivery (Cloud NAT) 📤
+- Finally, the message reaches the Mailroom (Cloud NAT).
+- The clerk sees the message is from the "Secret" room. He swaps the secret room number for the Building’s Public Address and attaches a unique Tracking Number (Port).
+- Outcome: The message goes out to the internet. When the tool's data comes back with that same tracking number, the Mailroom knows exactly which secret room to deliver it to.
