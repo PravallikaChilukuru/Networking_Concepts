@@ -42,7 +42,7 @@
 
 ### Step 2: The Mailroom Logbook (Cloud NAT) 📤
 - The letter arrives at the Mailroom (Cloud NAT). Since 10.0.0.5 is a secret address that the outside world doesn't understand, the Mailroom clerk does two things:
-      - Address Swap: He crosses out 10.0.0.5 and writes the building’s Public IP (e.g., 203.0.113.10).
+   - Address Swap: He crosses out 10.0.0.5 and writes the building’s Public IP (e.g., 203.0.113.10).
       - Tracking Number (Public Port): He assigns a unique Public Port (e.g., Port 12345) to this specific conversation and records it in his logbook.
 
 ### Step 3: The Specialized Detectives (Cloud Armor & Web Risk API) 🕵️‍♂️
