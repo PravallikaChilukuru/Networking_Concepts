@@ -58,7 +58,7 @@
 
 ### Let's test the Mailroom's logic
 > Imagine Secret Room B also sends a letter to the same website at the exact same time, using the same internal desk number (Port 5000).
-> How does the Mailroom clerk make sure the replies don't get mixed up when they come back from the internet?
+- How does the Mailroom clerk make sure the replies don't get mixed up when they come back from the internet?
     1. He gives both rooms the exact same Public Port because they are in the same building.
     2. He gives Secret Room B a different Public Port (tracking number) in his logbook.
     3. He just remembers who sent what without writing it down.
@@ -69,12 +69,12 @@
 
 ### Visualizing the Full Request Flow 🔄
 - Let's trace the journey of a single packet (the "letter") from the Secret Room to the Internet and back:
-  > Request Starts: Secret Room A (10.0.0.5) sends a request to tools.com using its internal desk number (Port 5000).
-  > Safety Check: The request hits the Firewall (Banned List). It's an approved destination, so it moves on.
-  > Address Translation: At Cloud NAT (The Mailroom), the address becomes the building's Public IP (203.0.113.10) and is assigned Public Port #12345. 🏷️
-  > Internet Journey: The letter travels through the internet. tools.com sees it coming from the building's address and sends a reply back to #12345.
-  > Return Entry: The reply reaches the building. Cloud Armor checks to make sure this isn't part of a malicious flood of data. 🕵️‍♂️
-  > Delivery: The Mailroom sees #12345, looks in the logbook, and knows it belongs to Secret Room A. It swaps the addresses back and delivers the update.
+   - Request Starts: Secret Room A (10.0.0.5) sends a request to tools.com using its internal desk number (Port 5000).
+   - Safety Check: The request hits the Firewall (Banned List). It's an approved destination, so it moves on.
+   - Address Translation: At Cloud NAT (The Mailroom), the address becomes the building's Public IP (203.0.113.10) and is assigned Public Port #12345. 🏷️
+   - Internet Journey: The letter travels through the internet. tools.com sees it coming from the building's address and sends a reply back to #12345.
+   - Return Entry: The reply reaches the building. Cloud Armor checks to make sure this isn't part of a malicious flood of data. 🕵️‍♂️
+   - Delivery: The Mailroom sees #12345, looks in the logbook, and knows it belongs to Secret Room A. It swaps the addresses back and delivers the update.
 
 - If the Mailroom (Cloud NAT) suddenly ran out of unique "Public Ports" (tracking numbers) because the building became too busy, what do you think would happen to new mail trying to leave the secret rooms?
   1. The mail would be sent without a tracking number.
