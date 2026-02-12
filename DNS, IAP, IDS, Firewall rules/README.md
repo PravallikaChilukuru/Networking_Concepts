@@ -103,3 +103,10 @@
 4. Delivery: The clerk swaps the address back to 10.0.0.5 and sends it to desk 5000 in Secret Room A.
 
 > If Secret Room A asks the directory for the address of malware-site.com, a **Secure DNS** (like Cloud DNS with security policies) can purposefully give the room a "fake" address or simply refuse to answer. This stops the "fishy" request before the mailroom even gets involved!
+
+### Technical Terms Abrevations
+- **DNS**: Domanin Name System
+- **NAT**: Network Address Translation
+- **IAP**: Identity Aware Proxy
+- **IDS**: Intrusion Detection System
+- **FW**: Firewall Rules
