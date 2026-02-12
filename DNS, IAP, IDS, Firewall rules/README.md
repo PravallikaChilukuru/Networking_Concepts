@@ -1,4 +1,4 @@
-## one big "Game Day" story. This scenario follows a single piece of data as it moves through the building, showing how DNS, Cloud NAT, Firewall Rules, IAP, and Cloud IDS work as a unit.
+## One big "Game Day" story. This scenario follows a single piece of data as it moves through the building, showing how DNS, Cloud NAT, Firewall Rules, IAP, and Cloud IDS work as a unit.
 
 
 **The Scenario:** The Coach’s Secret Playbook Update 📋
