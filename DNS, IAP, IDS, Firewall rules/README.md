@@ -105,7 +105,7 @@
 > If Secret Room A asks the directory for the address of malware-site.com, a **Secure DNS** (like Cloud DNS with security policies) can purposefully give the room a "fake" address or simply refuse to answer. This stops the "fishy" request before the mailroom even gets involved!
 
 ### Technical Terms Abrevations
-- **DNS**: Domanin Name System
+- **DNS**: Domain Name System
 - **NAT**: Network Address Translation
 - **IAP**: Identity Aware Proxy
 - **IDS**: Intrusion Detection System
